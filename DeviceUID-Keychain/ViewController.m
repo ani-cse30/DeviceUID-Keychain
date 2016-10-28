@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UniteDeviceUID.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"DeviceUID in Keychain";
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +30,7 @@
 }
 
 
+- (IBAction)DeviceUIDBtn:(id)sender {
+    _DeviceUID.text=[UniteDeviceUID uid];
+}
 @end

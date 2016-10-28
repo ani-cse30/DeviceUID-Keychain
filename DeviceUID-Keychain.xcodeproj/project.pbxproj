@@ -14,6 +14,7 @@
 		070CADE61DC330BA0099B960 /* DeviceUID_Keychain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 070CADE41DC330BA0099B960 /* DeviceUID_Keychain.xcdatamodeld */; };
 		070CADE81DC330BA0099B960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CADE71DC330BA0099B960 /* Assets.xcassets */; };
 		070CADEB1DC330BA0099B960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070CADE91DC330BA0099B960 /* LaunchScreen.storyboard */; };
+		070CADF51DC3322C0099B960 /* UniteDeviceUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 070CADF41DC3322C0099B960 /* UniteDeviceUID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		070CADE71DC330BA0099B960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070CADEA1DC330BA0099B960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070CADEC1DC330BA0099B960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070CADF31DC3322C0099B960 /* UniteDeviceUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniteDeviceUID.h; sourceTree = "<group>"; };
+		070CADF41DC3322C0099B960 /* UniteDeviceUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniteDeviceUID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		070CADD71DC330BA0099B960 /* DeviceUID-Keychain */ = {
 			isa = PBXGroup;
 			children = (
+				070CADF21DC3322C0099B960 /* UniteDeviceUID */,
 				070CADDB1DC330BA0099B960 /* AppDelegate.h */,
 				070CADDC1DC330BA0099B960 /* AppDelegate.m */,
 				070CADDE1DC330BA0099B960 /* ViewController.h */,
@@ -80,6 +84,15 @@
 				070CADD91DC330BA0099B960 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		070CADF21DC3322C0099B960 /* UniteDeviceUID */ = {
+			isa = PBXGroup;
+			children = (
+				070CADF31DC3322C0099B960 /* UniteDeviceUID.h */,
+				070CADF41DC3322C0099B960 /* UniteDeviceUID.m */,
+			);
+			path = UniteDeviceUID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +168,7 @@
 			files = (
 				070CADE61DC330BA0099B960 /* DeviceUID_Keychain.xcdatamodeld in Sources */,
 				070CADE01DC330BA0099B960 /* ViewController.m in Sources */,
+				070CADF51DC3322C0099B960 /* UniteDeviceUID.m in Sources */,
 				070CADDD1DC330BA0099B960 /* AppDelegate.m in Sources */,
 				070CADDA1DC330BA0099B960 /* main.m in Sources */,
 			);

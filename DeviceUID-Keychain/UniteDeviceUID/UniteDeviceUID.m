@@ -24,6 +24,11 @@
 #pragma mark - Public methods
 
 + (NSString *)uid {
+    /*
+     
+     -Change the key(uniteDeviceUID) for your own app
+     
+     */
     return [[[UniteDeviceUID alloc] initWithKey:@"uniteDeviceUID"] uid];
 }
 

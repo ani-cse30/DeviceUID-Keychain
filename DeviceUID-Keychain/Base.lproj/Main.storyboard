@@ -21,29 +21,45 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-uK-cfk">
                                 <color key="backgroundColor" red="0.50731066045501549" green="0.97647058819999999" blue="0.56503539243088641" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="  App's Device UID  "/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DZo-s2-dgd"/>
+                                    <constraint firstAttribute="width" constant="135" id="xXl-pc-ltU"/>
+                                </constraints>
+                                <state key="normal" title="Get App UID "/>
                                 <connections>
                                     <action selector="DeviceUIDBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="du9-BD-BYN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-ED-lAO">
-                                <frame key="frameInset" minX="24" minY="199" width="327" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-ED-lAO">
+                                <frame key="frameInset" minX="24" minY="199" width="327" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50731066049999995" green="0.97647058819999999" blue="0.5650353924" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.26552290620000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc5-1C-bBM">
+                                <color key="backgroundColor" red="0.50731066049999995" green="0.97647058819999999" blue="0.5650353924" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Set App New UID"/>
+                                <connections>
+                                    <action selector="DeviceUIDBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bm9-wk-okR"/>
+                                    <action selector="newDeviceUID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aC2-nq-XVN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZU7-ED-lAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="4he-pR-7cM"/>
-                            <constraint firstItem="ZU7-ED-lAO" firstAttribute="top" secondItem="ha4-uK-cfk" secondAttribute="bottom" constant="50" id="K7y-Ye-zc3"/>
-                            <constraint firstItem="ha4-uK-cfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="URA-tL-pf0"/>
-                            <constraint firstItem="ha4-uK-cfk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="Wmg-pe-z5k"/>
+                            <constraint firstItem="Vc5-1C-bBM" firstAttribute="width" secondItem="ha4-uK-cfk" secondAttribute="width" id="Fsn-2q-EeA"/>
+                            <constraint firstItem="Vc5-1C-bBM" firstAttribute="top" secondItem="ha4-uK-cfk" secondAttribute="top" id="R4B-ib-sy3"/>
+                            <constraint firstItem="ha4-uK-cfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="W5W-KC-M2N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vc5-1C-bBM" secondAttribute="trailing" id="mkA-yx-z6z"/>
+                            <constraint firstItem="Vc5-1C-bBM" firstAttribute="height" secondItem="ha4-uK-cfk" secondAttribute="height" id="uoa-bY-gp2"/>
+                            <constraint firstItem="ha4-uK-cfk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="zXr-C5-iJK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rix-ea-jkT"/>
                     <connections>
-                        <outlet property="DeviceUID" destination="ZU7-ED-lAO" id="SbY-mm-9j3"/>
+                        <outlet property="deviceUID" destination="ZU7-ED-lAO" id="Qwp-lj-RcH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

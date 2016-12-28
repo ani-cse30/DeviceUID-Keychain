@@ -126,6 +126,7 @@
 				TargetAttributes = {
 					070CADD41DC330BA0099B960 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7VT6555VUS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -288,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VT6555VUS;
 				INFOPLIST_FILE = "DeviceUID-Keychain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appsInception.DeviceUID-Keychain";
@@ -299,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VT6555VUS;
 				INFOPLIST_FILE = "DeviceUID-Keychain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appsInception.DeviceUID-Keychain";
@@ -325,6 +328,7 @@
 				070CADF11DC330BA0099B960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

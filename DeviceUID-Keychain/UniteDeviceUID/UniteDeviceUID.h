@@ -10,4 +10,5 @@
 
 @interface UniteDeviceUID : NSObject
 + (NSString *)uid;
++(BOOL)deleteUID;
 @end

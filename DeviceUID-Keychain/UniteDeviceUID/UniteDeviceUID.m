@@ -88,10 +88,7 @@
     return keychainItem;
 }
 
-/*! Sets
- *  param1
- *  param2
- */
+
 + (OSStatus)setValue:(NSString *)value forKeychainKey:(NSString *)key inService:(NSString *)service {
     NSMutableDictionary *keychainItem = [[self class] keychainItemForKey:key service:service];
     keychainItem[(__bridge id)kSecValueData] = [value dataUsingEncoding:NSUTF8StringEncoding];
@@ -144,7 +141,6 @@
 
 + (NSString *)appleIFV {
     if(NSClassFromString(@"UIDevice") && [UIDevice instancesRespondToSelector:@selector(identifierForVendor)]) {
-        // only available in iOS >= 6.0
         return [[UIDevice currentDevice].identifierForVendor UUIDString];
     }
     return nil;
@@ -162,4 +158,19 @@
     return uuid;
 }
 
+/***
+    Delete UID From keychain
+ **/
+
++(BOOL)deleteUID{
+    NSMutableDictionary *keychainItem = [[self class] keychainItemForKey:@"uniteDeviceUID" service:@"uniteDeviceUID"];
+    OSStatus status = SecItemDelete((__bridge CFDictionaryRef)keychainItem);
+    if( status != errSecSuccess) {
+        return FALSE;
+    }
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"uniteDeviceUID"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@" 😇😇😇😇😇Deleted!!!!!!!!!!!!!!!!!😇😇😇😇😇😇");
+    return TRUE;
+}
 @end

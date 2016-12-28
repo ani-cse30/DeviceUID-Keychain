@@ -11,7 +11,9 @@
 @interface ViewController : UIViewController
 
 - (IBAction)DeviceUIDBtn:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *DeviceUID;
+
+- (IBAction)newDeviceUID:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *deviceUID;
 
 @end
 

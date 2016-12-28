@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"DeviceUID in Keychain";
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,6 +31,14 @@
 
 
 - (IBAction)DeviceUIDBtn:(id)sender {
-    _DeviceUID.text=[UniteDeviceUID uid];
+    
+    _deviceUID.text=[UniteDeviceUID uid];
 }
+
+- (IBAction)newDeviceUID:(id)sender {
+  
+    [UniteDeviceUID deleteUID];
+    
+}
+
 @end
